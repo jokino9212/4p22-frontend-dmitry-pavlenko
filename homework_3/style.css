@@ -1,0 +1,42 @@
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black; 
+}
+
+th {
+    border: 1px solid black; 
+}
+
+.table__pink {
+    background-color: pink;
+}
+
+.table__blue {
+    background-color: blue;
+}
+
+.table__yellow {
+    background-color: yellow;
+}
+
+
+.table__grey {
+    background-color: grey;
+}
+.table__green {
+    background-color: green;
+}
+
+.table__el-name {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: orange;
+    border-radius: 15px;
+}
