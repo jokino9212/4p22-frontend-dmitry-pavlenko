@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-html {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+* {
+  box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
+html {
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -14,7 +13,7 @@ main {
 
 .outter {
   position: relative;
-  max-width: 2560px;
+  max-width: 2510px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -39,7 +38,8 @@ a {
   background-color: #590BFF;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   align-items: center;
   z-index: 2;
 }
@@ -55,12 +55,11 @@ a {
 }
 
 .sidebar {
-  flex: 1 1 10%;
   margin-right: 50px;
   max-width: 15%;
 }
 .sidebar__container {
-  max-width: 28%;
+  max-width: 25%;
   display: flex;
   padding-right: 10px;
   top: 150px;
@@ -85,14 +84,12 @@ a {
   margin-bottom: 12px;
 }
 
-.main-content {
-  flex: 10 1 62%;
-}
 .main-content__container {
   position: absolute;
   top: 150px;
-  left: 320px;
-  width: 90%;
+  left: 290px;
+  min-width: 63%;
+  max-width: 63%;
   z-index: 1;
 }
 .main-content__heading {
@@ -108,12 +105,13 @@ a {
   line-height: 32px;
   background-color: #590BFF;
   color: white;
-  min-width: 40vw;
-  max-width: 85%;
+  min-width: 100%;
+  max-width: 100%;
 }
 .main-content__list {
   margin-bottom: 13px;
   padding-left: 13px;
+  max-width: 80%;
 }
 .main-content__surname {
   font-weight: 400;
