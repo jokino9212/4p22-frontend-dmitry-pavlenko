@@ -88,12 +88,10 @@ main
         display: none
 
         &:checked + label::before
-            content: ''
-            background-color: transparent
-            background-image: url('/icons/check-mark.png')
-            background-size: 100%
-            background-repeat: no-repeat
-            border-radius: 5px
+            content: 'v'
+            color: green
+            text-align: center
+            border-radius: 15px
 
     &__checkbox-label
         padding-left: 20px
@@ -107,9 +105,7 @@ main
             vertical-align: middle
             margin-left: -10px  
             transition: 0.2s
-            background-image: url('./icons/check-mark.png')
-            background-size: 100%
-            background-repeat: no-repeat
+            
           
     &__checkbox-text
         font-weight: 400
