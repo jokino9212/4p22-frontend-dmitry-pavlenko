@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <div class="form__container">
+          <form action="" class="form__body">
+            <h2 class="form__title">Вход</h2>
+            <div class="form__email-box">
+              <label for="email" class="form__email-label">
+                <span class="form__email-text">Email</span>
+              </label>
+              <input
+                class="form__email"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Введите email"
+                required
+              />
+            </div>
+            <div class="form__password-box">
+              <label for="password" class="form__password-label">
+                <span class="form__password-text">Пароль</span>
+              </label>
+              <input
+                class="form__password"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Введите пароль"
+                required
+              />
+            </div>
+            <div class="form__checkbox-box">
+              <input
+                class="form__checkbox"
+                id="checkbox"
+                name="checkbox"
+                type="checkbox"
+                required
+              />
+              <label for="checkbox" class="form__checkbox-label">
+                <span class="form__checkbox-text">Я согласен получать уведомления на почту</span>
+              </label>
+            </div>
+            <button class="form__button">Войти</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

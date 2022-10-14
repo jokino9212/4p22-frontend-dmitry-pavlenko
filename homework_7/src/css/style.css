@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vw;
+  background-color: #1B2473;
+}
+
+.form {
+  padding-top: 82px;
+}
+.form__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.form__body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 46px 26px 45px;
+  max-width: 41.6666666667vw;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+.form__title {
+  margin-bottom: 17px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #787878;
+}
+.form__email-box {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.form__email-text {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #787878;
+}
+.form__email {
+  width: 100%;
+  color: #787878;
+  border: 2px solid #787878;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  border-radius: 10px;
+}
+.form__email:focus {
+  outline: none;
+}
+.form__password-box {
+  margin-bottom: 16px;
+}
+.form__password-text {
+  display: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: #787878;
+}
+.form__password {
+  width: 100%;
+  color: #787878;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  border-radius: 10px;
+}
+.form__password:focus {
+  outline: none;
+}
+.form__checkbox-box {
+  margin-bottom: 52px;
+}
+.form__checkbox {
+  display: none;
+}
+.form__checkbox:checked + label::before {
+  content: "";
+  background-color: transparent;
+  background-image: url("/icons/check-mark.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.form__checkbox-label {
+  padding-left: 20px;
+}
+.form__checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  vertical-align: middle;
+  margin-left: -10px;
+  transition: 0.2s;
+  background-image: url("./icons/check-mark.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.form__checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #787878;
+}
+.form__button {
+  display: inline-block;
+  padding: 18px 56px 18px 55px;
+  align-self: center;
+  cursor: pointer;
+  background-color: #1A226B;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  outline: none;
+  max-width: 180px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main {
+    height: 100%;
+  }
+  .form {
+    padding: 20px;
+  }
+  .form__container {
+    max-width: 100%;
+  }
+  .form__body {
+    max-width: 100%;
+    padding: 38px 45px 242px 45px;
+    border-radius: 20px;
+  }
+  .form__title {
+    margin-bottom: 13px;
+    font-size: 60px;
+  }
+  .form__email-box {
+    margin-bottom: 11px;
+  }
+  .form__email-text {
+    font-size: 24px;
+  }
+  .form__password-box {
+    margin-bottom: 19px;
+  }
+  .form__password-text {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .form__checkbox-box {
+    margin-bottom: 64px;
+  }
+  .form__checkbox-text {
+    font-size: 18px;
+  }
+  .form__button {
+    padding: 32px 64px;
+    font-size: 32px;
+    max-width: 220px;
+  }
+}
+@media (max-width: 375px) {
+  .form__email {
+    font-size: 22px;
+  }
+  .form__password {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=style.css.map */
