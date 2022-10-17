@@ -89,10 +89,10 @@ main {
   display: none;
 }
 .form__checkbox:checked + label::before {
-  content: "v";
-  color: green;
-  text-align: center;
   border-radius: 15px;
+  content: "";
+  background-image: url(/icons/check-mark.png);
+  background-size: contain;
 }
 .form__checkbox-label {
   padding-left: 20px;
