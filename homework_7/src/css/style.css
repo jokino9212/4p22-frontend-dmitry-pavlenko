@@ -89,13 +89,14 @@ main {
   display: none;
 }
 .form__checkbox:checked + label::before {
-  content: "";
+  content: "v";
+  color: green;
+  text-align: center;
   border-radius: 15px;
-  background-image: url("check-mark.png");
-  background-size: contain;
 }
 .form__checkbox-label {
   padding-left: 20px;
+  cursor: pointer;
 }
 .form__checkbox-label::before {
   content: "";
@@ -119,7 +120,7 @@ main {
   align-self: center;
   cursor: pointer;
   background-color: #1A226B;
-  color: green;
+  color: #FFFFFF;
   border-radius: 10px;
   font-weight: 700;
   font-size: 24px;
