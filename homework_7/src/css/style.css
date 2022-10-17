@@ -89,8 +89,8 @@ main {
   display: none;
 }
 .form__checkbox:checked + label::before {
-  border-radius: 15px;
   content: "";
+  border-radius: 15px;
   background-image: url(/icons/check-mark.png);
   background-size: contain;
 }
