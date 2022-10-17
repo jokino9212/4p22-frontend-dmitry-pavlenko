@@ -91,7 +91,7 @@ main {
 .form__checkbox:checked + label::before {
   content: "";
   border-radius: 15px;
-  background-image: url("/check-mark.png");
+  background-image: url("check-mark.png");
   background-size: contain;
 }
 .form__checkbox-label {
