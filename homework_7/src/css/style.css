@@ -89,9 +89,11 @@ main {
   display: none;
 }
 .form__checkbox:checked + label::before {
-  background-image: url("/img/1.png");
+  border-radius: 15px;
+  background-image: url("../../img/1.png");
   background-repeat: no-repeat;
   background-size: contain;
+  transition: 0.2s;
 }
 .form__checkbox-label {
   padding-left: 20px;
