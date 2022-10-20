@@ -11,180 +11,232 @@ main
     background-color: #1B2473
 
 .form
-    padding-top: 82px
+    padding-top: calc(82 / 1440 * 100vw)
 
     &__container
-        max-width: 1440px
+        max-width: calc(1440 / 1440 * 100vw)
         margin: 0 auto
 
     &__body
         margin: 0 auto
         display: flex
         flex-direction: column
-        padding: 26px 46px 26px 45px
-        max-width: calc(600 / 1440 * 100vw)
+        padding: calc(26 / 1440 * 100vw) calc(46 / 1440 * 100vw) calc(26 / 1440 * 100vw) calc(45 / 1440 * 100vw)
+        width: calc(600 / 1440 * 100vw)
+        height: calc(412 / 1440 * 100vw)
         background-color: #FFFFFF
+        border-radius: calc(20 / 1440 * 100vw)
         box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25)
 
     &__title
-        margin-bottom: 17px
+        margin-bottom: calc(17 / 1440 * 100vw)
         text-align: center
         font-weight: 700
-        font-size: 50px
-        line-height: 50px
+        font-size: calc(50 / 1440 * 100vw)
+        line-height: calc(50 / 1440 * 100vw)
         color: #787878
 
     &__email-box
-        margin-bottom: 32px
+        margin-bottom: calc(32 / 1440 * 100vw)
         display: flex
         flex-direction: column
 
     
     &__email-text
         display: block
-        margin-bottom: 8px
+        margin-bottom: calc(3 / 1440 * 100vw)
+        padding-left: calc(9 / 1440 * 100vw)
         font-weight: 700
-        font-size: 16px
-        line-height: 16px
+        font-size: calc(16 / 1440 * 100vw)
+        line-height: calc(16/ 1440 * 100vw)
         color: #787878
 
     &__email
+        padding-top: calc(5 / 1440 * 100vw)
+        padding-bottom: calc(4 / 1440 * 100vw)
+        padding-left: calc(15 / 1440 * 100vw)
         width: 100%
         color: #787878
         border: 2px solid #787878
         font-weight: 700
-        font-size: 28px
-        line-height: 36px
-        border-radius: 10px
-
+        font-size: calc(28 / 1440 * 100vw)
+        line-height: calc(36 / 1440 * 100vw)
+        border: 2px solid #787878
+        border-radius: calc(10 / 1440 * 100vw)
+        &::placeholder
+            color: #CCCCCC
         &:focus
             outline: none
 
     &__password-box
-        margin-bottom: 16px
+        margin-bottom: calc(16 / 1440 * 100vw)
     
     &__password-text
         display: none
         font-weight: 700
-        font-size: 24px
-        line-height: 16px
+        font-size: calc(24 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
         color: #787878
 
     &__password
+        padding-top: calc(5 / 1440 * 100vw)
+        padding-bottom: calc(5 / 1440 * 100vw)
+        padding-left: calc(15 / 1440 * 100vw)
         width: 100%
         color: #787878
         font-weight: 700
-        font-size: 28px
-        line-height: 36px
-        border-radius: 10px
-
+        font-size: calc(28 / 1440 * 100vw)
+        line-height: calc(36 / 1440 * 100vw)
+        border: 2px solid #787878
+        border-radius: calc(10 / 1440 * 100vw)
+        &::placeholder
+            color: #CCCCCC
         &:focus
             outline: none
 
     &__checkbox-box
-        margin-bottom: 52px
+        margin-bottom: calc(50 / 1440 * 100vw)
 
     &__checkbox
         display: none
-
+        
         &:checked + label::before
             // content: 'v'
             // color: green
             // text-align: center
-            border-radius: 15px
+            border-radius: calc(15 / 1440 * 100vw)
             background-image: url("../../img/1.png")
             background-repeat: no-repeat
             background-size: contain
             transition: 0.2s
 
     &__checkbox-label
-        padding-left: 20px
+        padding-left: calc(30 / 1440 * 100vw)
         cursor: pointer
-
+        
         &::before
             content: ''
             display: inline-block
-            width: 20px
-            height: 20px
+            width: calc(20 / 1440 * 100vw)
+            height: calc(20 / 1440 * 100vw)
             border: 1px solid grey
             vertical-align: middle
-            margin-left: -10px  
+            margin-left: calc(-30 / 1440 * 100vw)  
+            margin-right: calc(5 / 1440 * 100vw)
             transition: 0.2s
-            
+            border: 2px solid #787878
+            border-radius: calc(7 / 1440 * 100vw)
             
           
     &__checkbox-text
         font-weight: 400
-        font-size: 14px
-        line-height: 16px
+        font-size: calc(14 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
         color: #787878
 
     &__button
         display: inline-block
-        padding: 18px 56px 18px 55px
+        padding: calc(16 / 1440 * 100vw) calc(56 / 1440 * 100vw) calc(16 / 1440 * 100vw) calc(55 / 1440 * 100vw)
+        width: calc(180 / 1440 * 100vw)
         align-self: center    
         cursor: pointer
         background-color: #1A226B
         color: #FFFFFF
-        border-radius: 10px
         font-weight: 700
-        font-size: 24px
-        line-height: 16px
+        font-size: calc(24 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
         outline: none
-        max-width: 180px
+        border-radius: calc(10 / 1440 * 100vw)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
 
 // media
 
 @media screen and (min-width:320px) and (max-width: 768px)
     main
-        height: 100%
+        
 
     .form
-        padding: 20px
+        padding: calc(20 / 768 * 100vw)
 
         &__container
-            max-width: 100%
+            max-width: calc(768 / 768 * 100vw)
+            
             
         &__body
-            max-width: 100%
-            padding: 38px 45px 242px 45px
-            border-radius: 20px
+            width: calc(728 / 768 * 100vw)
+            height: calc(697 / 768 * 100vw)
+            padding: calc(48 / 768 * 100vw) calc(45 / 768 * 100vw) calc(242 / 768 * 100vw) calc(45 / 768 * 100vw)
+            border-radius: calc(20 / 768 * 100vw)
+            box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25)
 
         &__title
-            margin-bottom: 13px
-            font-size: 60px
+            margin-bottom: calc(13 / 768 * 100vw)
+            font-size: calc(60 / 768 * 100vw)
 
         &__email-box
-            margin-bottom: 11px
+            margin-bottom: calc(2 / 768 * 100vw)
 
         &__email-text
-            font-size: 24px
+            margin-bottom: calc(1 / 768 * 100vw)
+            padding-left: calc(9 / 768 * 100vw)
+            font-size: calc(24 / 768 * 100vw)
+            line-height: calc(36/ 768 * 100vw)
+
+        &__email
+            padding-top: calc(5 / 768 * 100vw)
+            padding-bottom: calc(5 / 768 * 100vw)
+            padding-left: calc(14 / 768 * 100vw)
+            border-radius: calc(10 / 768 * 100vw)
+            font-size: calc(28 / 768 * 100vw)
+            line-height: calc(36 / 768 * 100vw)
+            
 
         &__password-box
-            margin-bottom: 19px
+            margin-bottom: calc(20 / 768 * 100vw)
 
+        &__checkbox-label
+            &::before
+                width: calc(29 / 768 * 100vw)
+                height: calc(29 / 768 * 100vw)
+                
         &__password-text
             display: block
-            margin-bottom: 8px
+            margin-bottom: calc(0 / 768 * 100vw)
+            padding-left: calc(7 / 768 * 100vw)
+            font-size: calc(24 / 768 * 100vw)
+            line-height: calc(36/ 768 * 100vw)
 
+        &__password
+            padding-top: calc(3 / 768 * 100vw)
+            padding-bottom: calc(3 / 768 * 100vw)
+            padding-left: calc(15 / 768 * 100vw)
+            border-radius: calc(10 / 768 * 100vw)
+            font-size: calc(28 / 768 * 100vw)
+            line-height: calc(36 / 768 * 100vw)
+        
         &__checkbox-box
-            margin-bottom: 64px
+            margin-bottom: calc(64 / 768 * 100vw)
 
         &__checkbox-text
-            font-size: 18px
+            font-size: calc(18 / 768 * 100vw)
+        
+        &__checkbox-label
+            &::before
+                width: calc(28 / 768 * 100vw)
+                height: calc(28 / 768 * 100vw)
+                margin-left: calc(-15 / 768 * 100vw)  
+                margin-right: calc(5 / 768 * 100vw)
+                border-radius: calc(7 / 768 * 100vw)
 
         &__button
-            padding: 32px 64px
-            font-size: 32px
-            max-width: 220px
+            padding: calc(30 / 768 * 100vw) calc(64 / 768 * 100vw)
+            font-size: calc(32 / 768 * 100vw)
+            width: calc(220 / 768 * 100vw)
+            border-radius: calc(10 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
 
-@media (max-width: 375px)
-    .form
-        &__email
-            font-size: 22px
-            
-        &__password
-            font-size: 22px
+
 
 
 
