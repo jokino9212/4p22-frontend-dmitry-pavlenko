@@ -5,19 +5,14 @@ html
     
     font-family: 'Roboto', sans-serif
 body
-           
-
+    max-width: 2510px
 main
-    
     background-color: #FFFFFF
     
-
 .outter
     position: relative
-    max-width: 2510px
     padding-left: 25px
     padding-right: 25px
-    
 
 .container
     position: fixed
@@ -25,16 +20,12 @@ main
 .inner
     margin: 0 auto
     
-    
-
 a
     color: #FF710B
 
 .header
     &__outter
-        
     &__container
-        
         margin-bottom: 54px
         padding-left: 25px
         display: flex
@@ -42,8 +33,7 @@ a
         background-color: #590BFF
         top: 0
         left: 0
-        min-width: 100%
-        max-width: 100%
+        width: 100%
         align-items: center
         z-index: 2
 
@@ -53,19 +43,15 @@ a
         line-height: 63px
         color: white
         
-
 .section-box
     display: flex
     
-    
 .sidebar
-    
     margin-right: 50px
     max-width: 15%
 
-    &__container
-        
-        max-width: 25%
+    &__container     
+        max-width: 27%
         display: flex
         padding-right: 10px
         top: 150px
@@ -74,8 +60,8 @@ a
         min-height: 350px
         border-right: 2px solid #C4C4C4
         padding-left: 25px
+
     &__heading
-        
         font-weight: 400
         font-size: 28px
         line-height: 32px
@@ -90,19 +76,14 @@ a
             margin-bottom: 12px
 
 .main-content
-    
-    
     &__container
-        
         position: absolute
         top: 150px
         left: 290px
-        min-width: 63%
-        max-width: 63%
+        width: calc(1350 / 2560 * 100vw)
         z-index: 1
 
-    &__heading
-        
+    &__heading 
         position: sticky
         top: 89px
         left: 0
@@ -113,19 +94,19 @@ a
         font-size: 28px
         line-height: 32px
         background-color: #590BFF
-        color: white
-        min-width: 100%
-        max-width: 100%
-        
+        color: white   
 
     &__list
         margin-bottom: 13px
         padding-left: 13px
-        max-width: 80%
-
+    
     &__surname
         font-weight: 400
         font-size: 28px
         line-height: 32px
+
+
+            
+
         
 
