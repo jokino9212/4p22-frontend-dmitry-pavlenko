@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="./src/css/normalize.css" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header header--registration">
+    <div class="header__container">
+      <div class="header__logo-box">
+        <img src="../../img/logo.png" alt="Логотип" class="header__logo-img" />
+        <span class="header__logo-text">PCS Frontend</span>
+      </div>
+      <div class="header__authen-box">
+        <a href="registration.html" class="header__authen-link header__authen-link--registration">
+          Регистрация
+        </a>
+        <a href="index.html" class="header__authen-link header__authen-link--entrance">
+          Вход
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+<!-- Section form -->
+    <section class="form">
+      <div class="form__container">
+        <form action="" class="form__body">
+          <h2 class="form__title">Вход</h2>
+          <div class="form__email-box">
+            <label for="email" class="form__email-label">
+              <span class="form__email-text form__email-text--registration">Email</span>
+            </label>
+            <input class="form__email" id="email" name="email" type="email" placeholder="Введите email" required />
+          </div>
+          <div class="form__password-box">
+            <label for="password" class="form__password-label">
+              <span class="form__password-text form__password-text--registration">Пароль</span>
+            </label>
+            <input class="form__password" id="password" name="password" type="password" placeholder="Введите пароль"
+              required />
+          </div>
+          <div class="form__password-box form__password-box--confirm">
+            <label for="confirm-password" class="form__password-label">
+              <span class="form__password-text form__password-text--registration">Подтверждение пароля</span>
+            </label>
+            <input class="form__password" id="confirm-password" name="confirm password" type="password"
+              placeholder="Подтвердите пароль" required />
+          </div>
+          <div class="form__sex-box">
+            <h3 class="form__sex-header">Пол</h3>
+            <div class="form__radio-male">
+              <label for="radio-male" class="form__radio-label">
+                <input class="form__radio" id="radio-male" name="radio" type="radio" value="male" required />
+                <span class="form__radio-fake"></span>
+                <span class="form__radio-text">Мужчина</span>
+              </label>
+            </div>
+            <div class="form__radio-female">
+              <label for="radio-female" class="form__radio-label">
+                <input class="form__radio" id="radio-female" name="radio" type="radio" value="female" required />
+                <span class="form__radio-fake"></span>
+                <span class="form__radio-text">Женщина</span>
+              </label>
+            </div>
+          </div>
+          <div class="form__about-box">
+            <label for="text" class="form__about-label">
+              <span class="form__about-text">О себе</span>
+            </label>
+            <textarea class="form__about" name="text" id="text" placeholder="Расскажите о себе..."></textarea>
+          </div>
+          <div class="form__checkbox-box">
+            <label for="checkbox" class="form__checkbox-label">
+              <input class="form__checkbox" id="checkbox" name="checkbox" type="checkbox" required />
+              <span class="form__checkbox-fake"></span>
+              <span class="form__checkbox-text">Я согласен получать обновления на почту</span>
+            </label>
+          </div>
+          <button class="form__button form__button--registration">Регистрация</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
