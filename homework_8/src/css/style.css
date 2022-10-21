@@ -320,7 +320,7 @@ main {
   font-size: 1.6666666667vw;
   line-height: 1.1111111111vw;
   outline: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 .form__button--registration {
   padding: 1.25vw 1.1805555556vw 1.25vw 1.1805555556vw;
