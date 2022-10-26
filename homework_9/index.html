@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__header">
+            <div class="calculator__logo">
+                <span>Sphero R2-D2</span>
+            </div>
+            <div class="calculator__sun-battery">
+                <span class="calculator__sun-battery-img"></span>
+                
+            </div>
+        </div>
+        <form class="calculator__form">
+            <div class="calculator__result-out" id="result-out"></div>
+            <input type="text" class="calculator__first-number input" name="first-number" id="first-number" placeholder = "Введите число" autocomplete="off">
+            <label for="first-number" class="calculator__label calculator__label--first-number"></label>
+            <input type="text" class="calculator__symbol input" name="symbol" id="symbol" placeholder = "+, -, *, / " autocomplete="off">
+            <label for="symbol" class="calculator__label calculator__label--symbol"></label>
+            <input type="text" class="calculator__second-number input" name="second-number" id="second-number" placeholder = "Введите число" autocomplete="off">
+            <label for="second-number" class="calculator__label calculator__label--second-number"></label>
+            <button class="calculator__button-finish" id="button-finish">Рассчитать</button>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
