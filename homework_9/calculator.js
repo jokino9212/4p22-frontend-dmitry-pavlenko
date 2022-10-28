@@ -12,26 +12,38 @@ buttonFinish.addEventListener('click', (event) => {
 
 
     if (firstNumber === '') {
-        return console.log('Первое число не указано')
+        return console.log('Первое число не указано');
     };
 
     if (secondNumber === '') {
-        return console.log('Второе число не указано')
+        return console.log('Второе число не указано');
     };
 
    
     if (isNaN(firstNumber) || isNaN(secondNumber)) {
         resultOut.innerText = 'Некорректный ввод чисел';
-        return console.log('Некорректный ввод чисел')
+        return console.log('Некорректный ввод чисел');
     };
 
     switch (symbol) {
-        case '': return console.log('Не введён знак'); break;
-        case '+': result = Number(firstNumber) + Number(secondNumber); break;
-        case '-': result = Number(firstNumber) - Number(secondNumber); break;
-        case '*': result = Number(firstNumber) * Number(secondNumber); break;
-        case '/': result = Number(firstNumber) / Number(secondNumber); break;
-        default: return resultOut.innerText = 'Программа не поддерживает такую операцию', console.log('Программа не поддерживает такую операцию'); break;
+        case '': {
+            return console.log('Не введён знак');
+        };
+        case '+': {
+            result = Number(firstNumber) + Number(secondNumber);
+        } break;
+        case '-': {
+            result = Number(firstNumber) - Number(secondNumber);
+        } break;
+        case '*': {
+            result = Number(firstNumber) * Number(secondNumber);
+        } break;
+        case '/': {
+            result = Number(firstNumber) / Number(secondNumber);
+        } break;
+        default: {
+        return resultOut.innerText = 'Программа не поддерживает такую операцию', console.log('Программа не поддерживает такую операцию')
+        } break;
     };
 
     if (isNaN(result)) {
