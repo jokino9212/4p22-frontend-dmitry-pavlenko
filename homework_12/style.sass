@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap')
+
+*
+    box-sizing: border-box
+
+html
+    font-family: 'Roboto', sans-serif
+    
+header
+    font-family: 'Inter', sans-serif
+
+body
+    background-color: #FFFFFF
+   
+main
+    height: 100vw
+    
+// Heder
+.header
+    margin-bottom: calc(125 / 1440 * 100vw)
+    &--registration
+        margin-bottom: calc(106 / 1440 * 100vw)
+    &__container
+        padding: calc(18 / 1440 * 100vw) calc(43 / 1440 * 100vw) calc(12 / 1440 * 100vw) calc(30 / 1440 * 100vw)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: calc(80 / 1440 * 100vw)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &__logo-box
+        display: flex
+        align-items: center
+
+    &__logo-img
+        margin-right: calc(30 / 1440 * 100vw)
+        width: calc(222 / 1440 * 100vw)
+        height: calc(50 / 1440 * 100vw)
+    
+    &__logo-text
+        font-weight: 700
+        font-size: calc(36 / 1440 * 100vw)
+        line-height: calc(43.57 / 1440 * 100vw)
+        color: #787878
+
+    &__authen-box
+        display: flex
+        align-items: center
+
+    &__authen-link
+        font-weight: 700
+        font-size: calc(24 / 1440 * 100vw)
+        line-height: calc(29.05 / 1440 * 100vw)
+        color: #787878
+        &:hover
+            color: #1A226B
+        &:focus-visible
+            outline: none
+            color: #1A226B
+        
+    &__authen-link:not(:last-child) 
+            margin-right: calc(28 / 1440 * 100vw) 
+
+// Section form
+.form
+    margin-bottom: calc(123 / 1440 * 100vw)
+    &__container
+        width: calc(1440 / 1440 * 100vw)
+        margin: 0 auto
+
+    &__body
+        margin: 0 auto
+        margin-bottom: calc(233 / 1440 * 100vw)
+        display: flex
+        flex-direction: column
+        padding: calc(26 / 1440 * 100vw) calc(46 / 1440 * 100vw) calc(37 / 1440 * 100vw) calc(45 / 1440 * 100vw)
+        width: calc(600 / 1440 * 100vw)
+        background-color: #FFFFFF
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25)
+            
+
+    &__title
+        margin-bottom: calc(17 / 1440 * 100vw)
+        text-align: center
+        font-weight: 700
+        font-size: calc(50 / 1440 * 100vw)
+        line-height: calc(50 / 1440 * 100vw)
+        color: #787878
+
+    &__email-box
+        margin-bottom: calc(11 / 1440 * 100vw)
+        display: flex
+        flex-direction: column
+    
+    &__email-label
+        position: relative
+
+    &__star
+        position: absolute
+        top: 0
+        left: calc(-10 / 1440 * 100vw)
+        width: calc(8 / 1440 * 100vw)
+        height: calc(8 / 1440 * 100vw)
+
+    &__email-text
+        display: block
+        margin-bottom: calc(4 / 1440 * 100vw)
+        padding-left: calc(9 / 1440 * 100vw)
+        font-weight: 700
+        font-size: calc(16 / 1440 * 100vw)
+        line-height: calc(16/ 1440 * 100vw)
+        color: #787878
+        &--registration
+            padding-left: 0
+
+    &__validation-text
+        position: absolute
+        top: 0
+        right: 0
+        color: #EE2424
+
+    &__email
+        padding-top: calc(5 / 1440 * 100vw)
+        padding-bottom: calc(4 / 1440 * 100vw)
+        padding-left: calc(15 / 1440 * 100vw)
+        width: 100%
+        color: #787878
+        border: 2px solid #787878
+        font-weight: 700
+        font-size: calc(28 / 1440 * 100vw)
+        line-height: calc(36 / 1440 * 100vw)
+        border: 2px solid #787878
+
+        &::placeholder
+            color: #CCCCCC
+        &:focus
+            outline: none
+
+    &__password-box
+        margin-bottom: calc(11 / 1440 * 100vw)
+        display: flex
+        flex-direction: column
+    
+    &__password-label
+        position: relative
+
+    &__password-text
+        display: block
+        padding-left: calc(9 / 1440 * 100vw)
+        margin-bottom: calc(6 / 1440 * 100vw)
+        font-weight: 700
+        font-size: calc(16 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
+        color: #787878
+
+        &--registration
+            padding-left: 0
+
+    &__password
+        padding-top: calc(5 / 1440 * 100vw)
+        padding-bottom: calc(4 / 1440 * 100vw)
+        padding-left: calc(15 / 1440 * 100vw)
+        width: 100%
+        color: #787878
+        font-weight: 700
+        font-size: calc(28 / 1440 * 100vw)
+        line-height: calc(36 / 1440 * 100vw)
+        border: 2px solid #787878
+        &::placeholder
+            color: #CCCCCC
+        &:focus
+            outline: none
+    &__sex-box
+        margin-bottom: calc(11 / 1440 * 100vw)
+        
+    &__sex-header
+        margin-bottom: calc(5 / 1440 * 100vw)
+        font-weight: 700
+        font-size: calc(16 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
+        color: #787878
+
+    &__radio-male
+        
+        &:not(:last-child)
+            margin-bottom: calc(9 / 1440 * 100vw)  
+    &__radio-label
+        display: flex
+        cursor: pointer
+        align-items: center
+    &__radio
+        display: none
+        &:checked + .form__radio-fake::before
+            opacity: 1
+
+    &__radio-fake
+        margin-right: calc(10 / 1440 * 100vw)
+        position: relative
+        display: inline-block
+        width: calc(20 / 1440 * 100vw)
+        height: calc(20 / 1440 * 100vw)
+        border: 2px solid #787878
+        border-radius: 50%
+        &::before
+            content: ' '
+            position: absolute
+            display: block
+            width: calc(10 / 1440 * 100vw)
+            height: calc(10 / 1440 * 100vw)
+            background-color: #787878
+            top: 50%
+            left:50%
+            transform: translate(-50%, -50%)  
+            opacity: 0 
+            transition: 0.2s
+            border-radius: 50%
+
+    &__radio-text
+        display: inline-block
+        font-weight: 400
+        font-size: calc(14 / 1440 * 100vw)
+        color: #787878
+
+    &__about-label
+        display: inline-block
+        margin-bottom: calc(5 / 1440 * 100vw)
+
+    &__about-text
+        margin-bottom: calc(5 / 1440 * 100vw)
+        font-weight: 700
+        font-size: calc(16 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
+        color: #787878
+    &__about
+        display: block
+        margin-bottom: calc(23 / 1440 * 100vw)
+        width: 100%
+        height: calc(246 / 1440 * 100vw)
+        resize: none
+        font-size: calc(28 / 1440 * 100vw)
+        line-height: calc(36 / 1440 * 100vw)
+        color: #787878
+        border: 2px solid #787878
+        outline: none
+        &::placeholder
+            padding-top: calc(5 / 1440 * 100vw)
+            padding-left: calc(13 / 1440 * 100vw)
+            color: #CCCCCC
+
+    &__checkbox-box
+        margin-bottom: calc(56 / 1440 * 100vw)
+
+    &__checkbox-label      
+        display: flex
+        cursor: pointer
+        align-items: center
+
+    &__checkbox
+        display: none
+
+        &:checked + .form__checkbox-fake::before
+            opacity: 1
+
+    &__checkbox-fake
+        margin-right: calc(10 / 1440 * 100vw)
+        position: relative
+        display: inline-block
+        width: calc(24 / 1440 * 100vw)
+        height: calc(24 / 1440 * 100vw)
+        border: 2px solid #787878
+
+        &::before
+            content: ' '
+            position: absolute
+            display: block
+            width: calc(10 / 1440 * 100vw)
+            height: calc(10 / 1440 * 100vw)
+            background-color: #787878
+            top: 50%
+            left:50%
+            transform: translate(-50%, -50%)  
+            opacity: 0 
+            transition: 0.2s
+            
+    &__checkbox-text
+        display: inline-block
+        font-weight: 400
+        font-size: calc(14 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
+        color: #787878
+
+    &__button
+        display: inline-block
+        padding: calc(16 / 1440 * 100vw) calc(56 / 1440 * 100vw) calc(16 / 1440 * 100vw) calc(55 / 1440 * 100vw)
+        width: calc(180 / 1440 * 100vw)
+        align-self: center    
+        cursor: pointer
+        background-color: #1A226B
+        color: #FFFFFF
+        font-weight: 700
+        font-size: calc(24 / 1440 * 100vw)
+        line-height: calc(16 / 1440 * 100vw)
+        outline: none
+        border: none
+
+        &--registration
+            padding: calc(18 / 1440 * 100vw) calc(17 / 1440 * 100vw) calc(18 / 1440 * 100vw) calc(17 / 1440 * 100vw)
+
+.error
+    border-color: #EE2424
+// media
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+    .header
+        margin-bottom: 80px
+
+        &__container
+            padding: calc(23 / 768 * 100vw) calc(28 / 768 * 100vw) calc(28 / 768 * 100vw) calc(20 / 768 * 100vw)
+            height: calc(80 / 768 * 100vw)
+        
+        &__logo-img
+            margin-right: calc(34 / 768 * 100vw)
+            width: calc(124 / 768 * 100vw)
+            height: calc(25 / 768 * 100vw)
+        
+        &__logo-text
+            font-size: calc(24 / 768 * 100vw)
+            line-height: calc(29.05 / 768 * 100vw)
+    
+        &__authen-link
+            font-weight: 700
+            font-size: calc(16 / 768 * 100vw)
+            line-height: calc(19.36 / 768 * 100vw)
+            
+        &__authen-link:not(:last-child) 
+            margin-right: calc(36 / 768 * 100vw) 
+    
+    
+    .form
+        margin-bottom: calc(149 / 768 * 100vw)
+        &__container
+            max-width: calc(768 / 768 * 100vw)
+            
+        &__body
+            margin-bottom: calc(278 / 768 * 100vw) 
+            padding: calc(26 / 768 * 100vw) calc(46 / 768 * 100vw) calc(37 / 768 * 100vw) calc(45 / 768 * 100vw)
+            width: calc(600 / 768 * 100vw)
+            
+        &__title
+            margin-bottom: calc(13 / 768 * 100vw)
+            font-size: calc(50 / 768 * 100vw)
+            line-height: calc(50 / 768 * 100vw)
+
+        &__email-box
+            margin-bottom: calc(11 / 768 * 100vw)
+        
+        &__star
+            left: calc(-10 / 768 * 100vw)
+            width: calc(8 / 768 * 100vw)
+            height: calc(8 / 768 * 100vw)
+
+        &__email-text
+            margin-bottom: calc(4 / 768 * 100vw)
+            // padding-left: calc(9 / 768 * 100vw)
+            font-size: calc(16 / 768 * 100vw)
+            line-height: calc(16/ 768 * 100vw)
+
+        &__email
+            padding-top: calc(5 / 768 * 100vw)
+            padding-bottom: calc(4 / 768 * 100vw)
+            padding-left: calc(15 / 768 * 100vw)
+            font-size: calc(28 / 768 * 100vw)
+            line-height: calc(36 / 768 * 100vw)
+            
+
+        &__password-box
+            margin-bottom: calc(50 / 768 * 100vw)
+                
+        &__password-text
+            // padding-left: calc(9 / 768 * 100vw)
+            margin-bottom: calc(6 / 768 * 100vw)
+            font-size: calc(16 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
+
+        &__password
+            padding-top: calc(5 / 768 * 100vw)
+            padding-bottom: calc(4 / 768 * 100vw)
+            padding-left: calc(15 / 768 * 100vw)
+            font-size: calc(28 / 768 * 100vw)
+            line-height: calc(36 / 768 * 100vw)
+        
+        &__sex-box
+            margin-bottom: calc(11 / 768 * 100vw)
+            
+        &__sex-header
+            margin-bottom: calc(5 / 768 * 100vw)
+            font-size: calc(16 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
+     
+        &__radio-male
+            &:not(:last-child)
+                margin-bottom: calc(9 / 768 * 100vw) 
+
+        &__radio-fake
+            margin-right: calc(10 / 768 * 100vw)
+            width: calc(20 / 768 * 100vw)
+            height: calc(20 / 768 * 100vw)
+
+            &::before
+                width: calc(9 / 768 * 100vw)
+                height: calc(9 / 768 * 100vw)
+
+        &__radio-text
+            font-size: calc(14 / 768 * 100vw)
+
+        &__about-label
+            margin-bottom: calc(5 / 768 * 100vw)
+     
+        &__about-text
+            margin-bottom: calc(5 / 768 * 100vw)
+            font-size: calc(16 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
+
+        &__about
+            margin-bottom: calc(23 / 768 * 100vw)
+            height: calc(246 / 768 * 100vw)
+            font-size: calc(28 / 768 * 100vw)
+            line-height: calc(36 / 768 * 100vw)
+
+            &::placeholder
+                padding-top: calc(5 / 768 * 100vw)
+                padding-left: calc(13 / 768 * 100vw)
+     
+        &__checkbox-box
+            margin-bottom: calc(56 / 768 * 100vw)
+
+        &__checkbox-fake
+            margin-right: calc(10 / 768 * 100vw)
+            width: calc(24 / 768 * 100vw)
+            height: calc(24 / 768 * 100vw)
+     
+            &::before
+                width: calc(10 / 768 * 100vw)
+                height: calc(10 / 768 * 100vw)
+                
+        &__checkbox-text
+            font-size: calc(14 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
+     
+        &__button
+            padding: calc(16 / 768 * 100vw) calc(56 / 768 * 100vw) calc(16 / 768 * 100vw) calc(55 / 768 * 100vw)
+            width: calc(180 / 768 * 100vw)
+            font-size: calc(24 / 768 * 100vw)
+            line-height: calc(16 / 768 * 100vw)
+
+            &--registration
+                padding: calc(18 / 768 * 100vw) calc(17 / 768 * 100vw) calc(18 / 768 * 100vw) calc(17 / 768 * 100vw)
+
+@media screen and (max-width: 420px)
+    .form
+        &__star
+            left: calc(-6 / 420 * 100vw)
+            width: calc(4 / 420 * 100vw)
+            height: calc(4 / 420 * 100vw)
+
+        &__radio-fake
+            &::before
+                width: calc(4 / 420 * 100vw)
+                height: calc(4 / 420 * 100vw)
+
+
+
+
+
+
+
+
+

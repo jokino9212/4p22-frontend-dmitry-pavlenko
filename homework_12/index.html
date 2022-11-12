@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход</title>
+  <link rel="stylesheet" href="./src/css/normalize.css" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo-box">
+        <img src="img/logo.png" alt="Логотип" class="header__logo-img" />
+        <span class="header__logo-text">PCS Frontend</span>
+      </div>
+      <div class="header__authen-box">
+        <a href="registration.html" class="header__authen-link header__authen-link--registration">
+          Регистрация
+        </a>
+        <a href="index.html" class="header__authen-link header__authen-link--entrance">
+          Вход
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!-- Section form -->
+    <section class="form">
+      <div class="form__container">
+        <form action="" class="form__body">
+          <h2 class="form__title">Вход</h2>
+          <div class="form__email-box">
+            <label for="email" class="form__email-label">
+              <span class="form__email-text">Email</span>
+            </label>
+            <input class="form__email" id="email" name="email" type="email" placeholder="Введите email" required />
+          </div>
+          <div class="form__password-box">
+            <label for="password" class="form__password-label">
+              <span class="form__password-text">Пароль</span>
+            </label>
+            <input class="form__password" id="password" name="password" type="password" placeholder="Введите пароль"
+              required />
+          </div>
+          <button class="form__button">Войти</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
