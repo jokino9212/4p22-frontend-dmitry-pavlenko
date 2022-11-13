@@ -278,16 +278,19 @@ main {
   padding-top: 0.3472222222vw;
   padding-left: 0.9027777778vw;
   color: #CCCCCC;
+  font-weight: 700;
 }
 .form__about:-ms-input-placeholder {
   padding-top: 0.3472222222vw;
   padding-left: 0.9027777778vw;
   color: #CCCCCC;
+  font-weight: 700;
 }
 .form__about::placeholder {
   padding-top: 0.3472222222vw;
   padding-left: 0.9027777778vw;
   color: #CCCCCC;
+  font-weight: 700;
 }
 .form__checkbox-box {
   margin-bottom: 3.8888888889vw;
