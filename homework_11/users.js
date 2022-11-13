@@ -44,9 +44,9 @@ fetch("https://reqres.in/api/users?per_page=12")
                 console.log('Пункт №5:')
                 console.log('-----------');
 
-                for (let user of users.data) {
-                    console.log(Object.keys(user))
-                };
+                
+                    console.log(Object.keys(users.data))
+
             });
     })
     .catch((e) => {
