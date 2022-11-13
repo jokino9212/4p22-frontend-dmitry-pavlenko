@@ -45,7 +45,7 @@ fetch("https://reqres.in/api/users?per_page=12")
                 console.log('-----------');
 
                 
-                    console.log(Object.keys(users.data))
+                    console.log(Object.keys(users.data[0]))
 
             });
     })
