@@ -25,7 +25,7 @@ fetch("https://reqres.in/api/users?per_page=12")
 
                 users.data.filter(item => item.last_name.startsWith('F'))
                     .forEach(element => {
-                        console.log(element.last_name)
+                        console.log(element)
                     });
 // Пункт 4 Вывести следующее предложение: Наша база содержит данные следующих пользователей: и далее в этой же строке через запятую имена и фамилии всех пользователей. Использовать метод reduce
                 console.log('-----------');
